@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+
+body{
+    background-color: #F2F3F5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: #fff;
+    margin: 20vh auto;
+    width: 50%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Estilos de la foto */
+.container .img{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    /* Centrando foto con flexbox */
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+.container .img img{
+    width: auto;
+    height: 100%;
+}
+
+/* Informacion de la tarjeta */
+.container .info-profile{
+    width: 40%;
+    height: 100%;
+    max-height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+.container .info-profile .info-texto{
+    margin-bottom: 60px;
+}
+.container .info-profile .info-texto h1, h2{
+    text-align: center;
+    margin: 0px;
+}
+.container .info-profile .info-texto h1{
+    margin-top: 20px;
+}
+.container .info-profile .info-texto h2{
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+/* Boton CTA */
+.container .info-profile .info-cta a{
+    text-decoration: none;
+    background: #1BA058;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.container .info-profile .info-cta a:hover{
+    background: #fff;
+    font-weight: 200;
+    color: #1BA058;
+    border: solid 1px #1BA058;
+}
