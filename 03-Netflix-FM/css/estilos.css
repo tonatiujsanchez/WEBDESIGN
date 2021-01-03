@@ -1,0 +1,118 @@
+:root{
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*=========================================== 
+============ Barra de Navegación ============ */
+header{
+    padding: 30px 0;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    color: var(--rojo);
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+header nav a:hover,
+header nav a.active{
+    color: #fff;
+}
+
+
+/*=========================================== 
+============ Película principal ============ */
+.pelicula-principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    /* fondo */
+    background: linear-gradient( rgba(0, 0, 0,.50), rgba(0, 0, 0, .50) ), url('../img/bg-01.jpg');
+    background-position: center center;
+    background-size: cover;
+    /* Contenido */
+    display: flex;
+    align-items: flex-end;
+    
+    margin-bottom: 3.12em;
+}
+.pelicula-principal .contenedor{
+    margin: 0 auto;
+    padding-bottom: 7em;
+}
+.pelicula-principal .titulo{
+    font-size: 3.12em;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+.pelicula-principal .descripcion{
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.75em;
+    max-width: 80%;
+
+    margin-bottom: 1.25em;
+}
+.pelicula-principal .boton{
+    border: none;
+    background: rgba(0, 0, 0, .50);
+    padding: 0.93em 1.87em;
+    border-radius: 0.31em;
+    color: #FFF;
+    font-size: 1.12em;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.pelicula-principal .boton i{
+    margin-right: .5em;
+}
+.pelicula-principal .boton:hover{
+    background: #FFF;
+    color: #000;
+}
+
+/*=========================================== 
+============ Media Queries ============ */
+@media screen and ( max-width: 800px ){
+    header .contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+    header .logo{
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    .pelicula-principal{
+        font-size: 14px;
+    }
+    .pelicula-principal .descripcion{
+        max-width: 100%;
+    }
+
+}
