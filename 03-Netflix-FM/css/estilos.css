@@ -117,6 +117,7 @@ header nav a.active{
     cursor: pointer;
     border: none;
     margin-right: 2px;
+    outline:none;
 }
 .peliculas-recomendadas .contenedor-titulo-ctrls .indicadores button:hover,
 .peliculas-recomendadas .contenedor-titulo-ctrls .indicadores button.active{
@@ -165,6 +166,7 @@ header nav a.active{
     width: 100%;
     padding: 20px 0;
     overflow: hidden;
+    /* overflow-x: scroll; */
     scroll-behavior: smooth;
 }
 .peliculas-recomendadas .contenedor-carousel .carousel{
