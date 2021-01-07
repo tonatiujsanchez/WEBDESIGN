@@ -46,12 +46,13 @@ header .barra-navegacion .menu a{
     padding-bottom: 9px;
     border-bottom: 2px solid transparent;
 }
-header .barra-navegacion .menu a:hover{
+header .barra-navegacion .menu a:hover,
+header .barra-navegacion .menu a.active{
     border-bottom: 2px solid #FFF;
 }
 
 header .contenedor-texto{
-    height: 70%;
+    height: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,4 +77,90 @@ header .contenedor-texto .texto .nombre{
 header .contenedor-texto .texto .cargo{
     font-size: 1.5em;
     font-weight: 400;
+}
+/* === === ACERCA DE === === */
+.acerca-de{
+    text-align: center;
+}
+.acerca-de .contenedor{
+    overflow: visible;
+}
+.acerca-de .foto{
+    width: 155px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: -60px;
+    border-radius: 100%;
+    border: 5px solid rgba(255, 255, 255, .9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+.acerca-de .foto img{
+    width: 120%;
+    height: 120%;
+}
+
+.acerca-de .texto{
+    width: 80%;
+    margin: 40px auto 60px auto;
+    line-height: 25px;
+}
+
+.acerca-de .texto .titulo{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #DD820D;
+    margin-bottom: 40px;
+}
+.acerca-de .texto p{
+    font-weight: 400;
+    font-size: 1em;
+    color: #5A5A5A;
+}
+.acerca-de .texto .bold{
+    font-style:oblique;
+    color: #018D63;
+}
+
+/* === === TRABAJOS === === */
+.trabajos{
+    background: #F2F2F2;
+    padding: 60px 0;
+}
+.trabajos .titulo{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #323068;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.trabajos .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.trabajos .contenedor-trabajos .trabajo{
+    width: 23%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.trabajos .contenedor-trabajos .trabajo img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+}
+.trabajos .contenedor-trabajos .trabajo h4{
+    font-weight: 700;
+    color: #018D63;
+    margin: 15px 0 10px 0;
+}
+.trabajos .contenedor-trabajos .trabajo p{
+    font-size: 14px;
+    color: #636363;
+    margin: 10px 0;
 }
