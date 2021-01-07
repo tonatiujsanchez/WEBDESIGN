@@ -17,13 +17,63 @@ body{
 
 /* === === HEADER === === */
 header{
-    height: 90vh;
+    height: 70vh;
     background:linear-gradient( rgba(0, 0, 0,.50), rgba(0, 0, 0, .50) ), url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 header .contenedor{
+    height: 100%;
     display: flex;
+    flex-direction: column;
+}
+header .barra-navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+header .barra-navegacion .titulo{
     color: #FFF;
+    font-size: 2em;
+}
+header .barra-navegacion .menu a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1em;
+    margin: 0 15px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid transparent;
+}
+header .barra-navegacion .menu a:hover{
+    border-bottom: 2px solid #FFF;
+}
+
+header .contenedor-texto{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .contenedor-texto .texto{
+    border: 2px solid rgba(255, 255, 255, .50);
+    border-radius: 3px;
+    padding: 20px 80px;
+    text-align: center;
+    color: #FFF;
+}
+
+header .contenedor-texto .texto .nombre,
+header .contenedor-texto .texto .cargo{
+    margin: 10px 0;
+}
+
+header .contenedor-texto .texto .nombre{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+header .contenedor-texto .texto .cargo{
+    font-size: 1.5em;
+    font-weight: 400;
 }
