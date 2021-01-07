@@ -1,0 +1,29 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* === === HEADER === === */
+header{
+    height: 90vh;
+    background:linear-gradient( rgba(0, 0, 0,.50), rgba(0, 0, 0, .50) ), url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+header .contenedor{
+    display: flex;
+    color: #FFF;
+}
