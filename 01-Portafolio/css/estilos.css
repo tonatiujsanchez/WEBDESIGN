@@ -125,9 +125,62 @@ header .contenedor-texto .texto .cargo{
     color: #018D63;
 }
 
+/* === === HABILIDADES === === */
+.habilidades{
+    background: #F2F2F2;
+    padding: 60px 0;
+}
+.habilidades .titulo{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #323068;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.habilidades .contenedor-habilidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.habilidades .contenedor-habilidades .habilidad{
+    width: 23%;
+    margin-bottom: 40px;
+    background: #FFF;
+    padding: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habilidades .contenedor-habilidades .habilidad .icono{
+    background: #444;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    transition: .5s ease all;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BBB;
+}
+.habilidades .contenedor-habilidades .habilidad .icono:hover{
+    background: #000;
+    color: #FFF; 
+}
+.habilidades .contenedor-habilidades .habilidad .icono i{
+    font-size: 2.5em;
+}
+.habilidades .contenedor-habilidades .habilidad .nombre{
+    margin-top: 20px;
+    margin-bottom: 0; 
+    font-weight: 600;
+    color: #5A5A5A;
+}
+
 /* === === TRABAJOS === === */
 .trabajos{
-    background: #F2F2F2;
     padding: 60px 0;
 }
 .trabajos .titulo{
