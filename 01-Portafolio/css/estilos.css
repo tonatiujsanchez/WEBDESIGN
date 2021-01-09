@@ -217,3 +217,216 @@ header .contenedor-texto .texto .cargo{
     color: #636363;
     margin: 10px 0;
 }
+
+/* === === TRABAJOS === === */
+.posts{
+    padding: 60px 0;
+    background: #F2F2F2;
+}
+.posts .titulo{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #323068;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.posts .contenedor-posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.posts .contenedor-posts .post{
+    width: 31%;
+    overflow: hidden;
+    /* background-color: #FFF; */
+    margin-bottom: 40px;
+    box-shadow: 0 3px 3px 0 #c9c9c9;
+
+}
+.posts .contenedor-posts .post .foto{
+    width: 100%;
+}
+.posts .contenedor-posts .post .foto img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px 3px 0 0px;
+}
+.posts .contenedor-posts .post .descripcion{
+    padding: 20px;
+    background-color: #FFF; 
+}
+.posts .contenedor-posts .post .descripcion .desc-body{
+    border-bottom: solid 1px #c9c9c9;
+}   
+.posts .contenedor-posts .post .descripcion .desc-body .titulo-post{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: left;
+    color: #30684c;
+}
+
+.posts .contenedor-posts .post .descripcion .desc-body .data{
+    display: flex;
+    justify-content: left;
+    padding-left: 0;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+
+
+}
+.posts .contenedor-posts .post .descripcion .desc-body li{
+    list-style: none;
+    font-size: .8em;
+    color: #797979;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.posts .contenedor-posts .post .descripcion .desc-body .resumen{
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    line-height: 1.5em;
+    text-align: left;
+    font-size: 1em;
+    color: #636363;
+}
+.posts .contenedor-posts .post .descripcion .desc-footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.posts .contenedor-posts .post .descripcion .desc-footer a{
+    text-decoration: none;
+    font-weight: 300;
+    color: #797979;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+.posts .contenedor-posts .post .descripcion .desc-footer a:hover{
+    color: #000000;
+}
+
+/* === === CONTACTO === === */
+
+footer .contacto{
+    padding: 60px 0;
+}
+
+.contacto .titulo{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #323068;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contacto .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contacto .formulario input[type='text'],
+.contacto .formulario input[type='email']{
+    width: 49%;
+}
+.contacto .formulario textarea{
+    width: 100%;
+    min-width: 100%;
+    height: 100px;
+    min-height: 150px;
+    max-height: 200px;
+}
+.contacto .formulario input[type='text'],
+.contacto .formulario input[type='email'],
+.contacto .formulario textarea{
+    border: 2px solid #CECECE;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #A4A4A4;
+    outline:none;
+    margin-bottom: 20px;
+}
+.contacto .formulario input[type='text']:focus,
+.contacto .formulario input[type='email']:focus,
+.contacto .formulario textarea:focus{
+    border: solid 2px #007239;
+}
+
+.contacto .formulario .btn-enviar{
+    margin: 0 auto;
+    border: none;
+    background: #30684C;
+    color: #FFF;
+    font-size: 20px;
+    padding: 15px 60px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contacto .formulario .btn-enviar:hover{
+    background: #007239;
+    /* color: #30684C; */
+    /* border: solid 2px #30684C; */
+}
+
+/* === === REDES SOCIALES === === */
+.redes-sociales {
+    padding: 60px 0;
+    background: #0d2734;
+}
+.redes-sociales .contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.redes-sociales a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 100%;
+    font-size: 1.5em;
+    margin: 0 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociales .facebook:hover{
+    background: #3b5998;
+}
+.redes-sociales .twitter:hover{
+    background: #1da1f2;
+}
+.redes-sociales .instagram:hover{
+    background: #c13584;
+}
+.redes-sociales .linkedin:hover{
+    background: #0077b5;
+}
+.redes-sociales .github:hover{
+    background: #333;
+}
+
+/* === === COPYRIGHT === === */
+footer .copyright{
+    background: #0d2734;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #ebebeb;
+    font-size: .9em;
+    font-weight: 300;
+    padding: 5px;
+    border-top: solid 1px rgba(255, 255, 255, .20);
+}
