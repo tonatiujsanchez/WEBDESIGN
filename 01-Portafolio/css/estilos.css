@@ -246,7 +246,8 @@ header .contenedor-texto .texto .cargo{
 }
 .posts .contenedor-posts .post .foto{
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
+    height: auto;
     overflow: hidden;
 }
 .posts .contenedor-posts .post .foto img{
@@ -437,6 +438,17 @@ footer .copyright{
 
 /* === === === MEDIA QUERIES === === === */
 /* === === === === ===== === === === === */ 
+@media screen and (max-width: 920px){
+    .trabajos .contenedor-trabajos{
+        justify-content: space-around;
+    }
+    .trabajos .contenedor-trabajos .trabajo{
+        width: 32%;
+    }
+    .posts .contenedor-posts .post{
+        width: 46%;
+    }
+}
 
 @media screen and (max-width: 800px){
     header .barra-navegacion{
@@ -449,6 +461,20 @@ footer .copyright{
     header .barra-navegacion .menu a{
         margin: 0 30px;
     }
+    /* header .contenedor-texto .texto .nombre,
+    header .contenedor-texto .texto .cargo{
+        margin: 10px 0;
+    }
+     */
+    header .contenedor-texto .texto .nombre{
+        font-size: 2.2em;
+    }
+    header .contenedor-texto .texto .cargo{
+        font-size: 1.2em;
+    }
+    .habilidades .contenedor-habilidades {
+        justify-content: space-around;
+    }
     .habilidades .contenedor-habilidades .habilidad{
         width: 30%;
     }
@@ -456,9 +482,62 @@ footer .copyright{
         width: 46%;
     }
     .posts .contenedor-posts .post{
-        width: 46%;
+        /* width: 46%; */
     }
     .posts .contenedor-posts .post .foto{
         height: auto;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .posts .contenedor-posts .post .descripcion .desc-body li{
+        font-size: .6em;
+    }
+    .habilidades .contenedor-habilidades .habilidad{
+        padding: 25px 0;
+    }
+}
+@media screen and (max-width: 550px){
+    header .contenedor-texto .texto .nombre{
+        font-size: 2em;
+    }
+    header .contenedor-texto .texto .cargo{
+        font-size: 1em;
+    }
+    .habilidades .contenedor-habilidades .habilidad{
+        width: 46%;
+    }
+}
+@media screen and (max-width: 450px){
+    header .barra-navegacion .menu a{
+        margin: 0 15px;
+    }
+    header .contenedor-texto .texto{
+        padding: 15px 40px;
+    }
+    header .contenedor-texto .texto .nombre{
+        font-size: 1.5em;
+    }
+    header .contenedor-texto .texto .cargo{
+        font-size: 1em;
+    }
+    .habilidades .contenedor-habilidades .habilidad{
+        padding: 20px 0;
+    }
+    .habilidades .contenedor-habilidades .habilidad .nombre{
+        margin-top: 10px;
+    }
+    .trabajos .contenedor-trabajos .trabajo{
+        width: 90%;
+    }
+    .posts .contenedor-posts {
+        justify-content: center;
+    }
+    .posts .contenedor-posts .post{
+        width: 100%;
+    }
+    footer .copyright{
+
+        font-size: .6em;
     }
 }
