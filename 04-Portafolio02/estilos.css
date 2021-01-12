@@ -1,0 +1,193 @@
+/*
+GRADIENTE:
+https://mycolor.space/gradient?ori=to+right+top&hex=%232F6FB0&hex2=%234075AA&sub=1
+
+COLORES:
+https://colorhunt.co/palette/225760
+
+01: #dddddd
+02: #222831
+03: #30475e
+04: #f05454
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+/* ********** Componentes ************ */
+.boton-primario{
+    border: none;
+    background: #f05454;
+    padding: 15px 25px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 3px;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+}
+.boton-primario:hover{
+    background: #db4646;
+}
+.nueva-seccion{
+    padding: 80px 0;
+    width: 100%;
+}
+.titulo-seccion{
+    text-align: center;
+    font-size: 3.5em;
+    margin: 40px 0;
+    color: #222831;
+}
+
+
+header{
+    height: 100vh;
+    background:linear-gradient( rgba(34, 40, 49, .5), rgba(34, 40, 49, .5) ), url('./img/bg-01.jpg');
+    background-position: center;
+    background-size: cover;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header .barra-navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+header .barra-navegacion h2{
+    font-size: 2em;
+    color: #dddddd;
+}
+header .barra-navegacion ul{
+    display: flex;
+
+}
+header .barra-navegacion ul li{
+    list-style: none;
+    margin-right: 15px;
+    padding: 10px 0;
+    border-bottom: solid 2px transparent;
+}
+header .barra-navegacion ul li:hover{
+    border-bottom: solid 2px #dddddd;
+}
+header .barra-navegacion ul li a{
+    text-decoration: none;
+    color: #dddddd;
+}
+header .contenedor-titular{
+    color: #dddddd;
+    height: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .contenedor-titular .titular{
+    text-align: center;
+}
+header .contenedor-titular .titular .nombre{
+    font-weight: 600;
+    font-size: 4.5em;
+}
+header .contenedor-titular .titular .ocupacion{
+    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 15px;
+  
+}
+
+/* ********** Sobre mi *********** */
+.sobre-mi .contenedor-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.sobre-mi .contenedor-info .foto{
+    width: 45%;
+    border-bottom: solid 1px #222831;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.sobre-mi .contenedor-info .foto img{
+    width: 100%;
+}
+.sobre-mi .contenedor-info .info{
+    text-align: left;
+    width: 50%;
+}
+.sobre-mi .contenedor-info .texto{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.sobre-mi .contenedor-info .texto p{
+    margin-bottom: 10px;
+}
+.sobre-mi .contenedor-info .texto span{
+    font-weight: 600;
+}
+
+/* ********** Servicios *********** */
+.servicios .container .contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicios .container .contenedor-servicios .servicio{
+    width: 32%;
+    margin-top: 40px;
+    border-radius: 3px;
+    padding: 30px;
+    color: #dddddd;
+    background-image: linear-gradient(to right top, #2f6fb0, #3371af, #3872ad, #3c74ac, #4075aa);
+    overflow: hidden;
+}
+.servicios .container .contenedor-servicios .servicio h4{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.servicios .container .contenedor-servicios .servicio p{
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+
+    height: 250px;
+}
+.servicios .container .contenedor-servicios .servicio .icono{
+    width: 3.5em;
+    height: 3.5em;
+    background: #FFF;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+.servicios .container .contenedor-servicios .servicio .icono i{
+    font-size: 1.5em;
+    color: #4075AA;
+}
