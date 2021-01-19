@@ -411,3 +411,114 @@ footer .copyright{
         height: 170px;
     }
 }
+@media (max-width:768px){
+    .servicios .container .contenedor-servicios .servicio{
+        width: 46%;
+    }
+    .ventajas .titulo-seccion{
+        font-size: 50px;
+    }
+    .ventajas .contenedor-ventajas .ventaja{
+        width: 32%;
+        padding: 0 8px;
+    }
+    .blog .contenedor-articulos .articulo{
+        width: 46%;
+        margin-bottom: 40px;
+    }
+    .blog .contenedor-articulos .articulo .articulo-desc p{
+        height: auto;
+    }
+    .contacto .titulo-seccion{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    main .whatsapp a img{
+        width: 40px;
+    }
+    footer .copyright{
+        font-size: 14px;
+    }
+}
+@media (max-width:480px){
+    .nueva-seccion{
+        padding: 40px 0;
+    }
+    .titulo-seccion{
+        font-size: 2.5em;
+    }
+    header{
+        width: 100%;
+        text-align: center;
+    }
+    header .container{
+        width: 100%;
+    }
+    header .barra-navegacion{
+        display: block;
+        width: 100%;
+    }
+    header .barra-navegacion h2{
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    header .barra-navegacion ul{
+        flex-direction: column;
+        padding: 0 40px;
+        /* background-color: #222831; */
+    }
+    header .barra-navegacion ul li{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+    header .barra-navegacion ul li a{
+        display: block;
+        width: 100%;
+    }
+    header .contenedor-titular{
+        height: 30%;
+    }
+    header .contenedor-titular .titular .nombre{
+        font-size: 3em;
+    }
+    header .contenedor-titular .titular .ocupacion{
+        font-size: 1.5em;
+    }
+
+    .sobre-mi .contenedor-info{
+        flex-direction: column;
+    }
+    .sobre-mi .contenedor-info .foto{
+        margin-bottom: 30px;
+    }
+    .sobre-mi .contenedor-info .foto,
+    .sobre-mi .contenedor-info .info{
+        width: 100%;
+    }
+    .sobre-mi .contenedor-info .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .servicios .container .contenedor-servicios .servicio{
+        width: 100%;
+    }
+    .ventajas .contenedor-ventajas .ventaja{
+        width: 100%;
+    }
+    .blog .contenedor-articulos .articulo{
+        width: 100%;
+    }
+    .contacto .formulario input[type="text"],
+    .contacto .formulario input[type="email"],
+    .contacto .formulario textarea{
+        width: 100%;
+    }
+    .contacto .titulo-seccion,
+    .ventajas .titulo-seccion{
+        font-size: 2.2em;
+        line-height: 45px;
+    }
+}
