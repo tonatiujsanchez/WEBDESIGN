@@ -1,0 +1,50 @@
+:root{
+    --naranja: #e75b4c;
+    --naranjaOscuro: #ed1c24;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.contenedor{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--naranja);
+    position: relative;
+    height: 90vh;
+}
+.header .barra-navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header .barra-navegacion a{
+    color: #FFF;
+}
+.header .barra-navegacion .logo{
+    font-size: 30px;
+    font-weight: 600;
+}
+.header .barra-navegacion .enlace-navegacion{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+.contenedor-wave{
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
